@@ -1,12 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css" type="text/css">
-    <title>SIGN UP</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="./style.css" rel="stylesheet" type="text/css" />
+		<title>Form</title>
+	</head>
+	<body>
+		<main id="main-container">
+			<section id="left-section">
+				<div class="logo-container">
+					<img
+						src="./imgs/odin-lined.png"
+						class="logo"
+						alt="The Odin Project Logo"
+					/>
+					<h1>ODIN</h1>
+				</div>
+				<p class="photo-credit">Photo by [Author] on Unsplash</p>
+			</section>
+			<section id="right-section">
+				<header>
+					<h2>Sign Up</h2>
+					<p>
+						This is not a real online service! You know you need something like
+						this in your life to help you realize your deepest dreams. Sign up
+						now to get started.
+					</p>
+				</header>
+				<form>
+					<fieldset class="info-container">
+						<legend>Let's Do This!</legend>
+						<div class="info-column">
+							<label for="first-name">*First Name: </label>
+							<input
+								type="text"
+								minlength="1"
+								maxlength="50"
+								name="first-name"
+								id="first-name"
+								placeholder="Your First Name"
+								required
+							/>
+							<label for="email">*Email: </label>
+							<input 
+                                type="email" 
+                                name="email"
+                                id="email"
+                                placeholder="youremail@email.com"   
+                                required 
+                            />
+							<label for="pwd">*Password: </label>
+							<input
+								type="password"
+								minlength="7"
+								name="pwd"
+								id="pwd"
+								placeholder="Enter password"
+								required
+							/>
+						</div>
+						<div class="info-column">
+							<label for="last-name">Last Name: </label>
+							<input
+								type="text"
+								minlength="1"
+								maxlength="50"
+								name="last-name"
+								id="last-name"
+								placeholder="Your Last Name"
+							/>
+							<label for="phone-number">*Phone Number: </label>
+							<input
+								type="number"
+								name="phone-number"
+								id="phone-number"
+								placeholder="91-000-000-000"
+								required
+							/>
+							<label for="confirm-pwd">*Confirm Password: </label>
+							<input
+								type="password"
+								minlength="7"
+								name="confirm-pwd"
+								id="confirm-pwd"
+								placeholder="Confirm password"
+								required
+							/>
+						</div>
+					</fieldset>
+                    <button type="submit">Create Account</button>
+				</form>
+			</section>
+		</main>
+	</body>
 </html>
