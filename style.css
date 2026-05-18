@@ -1,0 +1,94 @@
+@import url(./font/stylesheet.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    
+}
+
+#main-container {
+    display: flex;
+    color: white;
+    height: 110vh;
+}
+
+.logo-container {
+    display: flex;
+    padding: 10%;
+    margin-top: 50%;
+    background-color: rgba(0, 0, 0, 0.432);
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+.photo-credit {
+    text-align: center;
+}
+
+.logo {
+    height: 125px;
+    width: 100px;
+}
+
+#left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(./imgs/bg-image.avif); 
+    background-repeat: no-repeat;
+    background-size: cover;  
+    width: 50%;
+}
+
+#right-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 20%;
+}
+
+form {
+    width: 100%;
+    border: 1px solid red;
+    padding: 5%;
+}
+
+.info-container {
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    
+} 
+
+.info-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-right: 25px;
+    margin-left: 25px;
+    width: 300px;
+}
+
+
+
+input:user-invalid {
+    border: 1px solid red;
+}
+
+input:user-valid {
+    border: 1px solid rgb(57, 226, 57);
+}
